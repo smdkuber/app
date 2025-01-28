@@ -17,5 +17,6 @@ async def root2():
 async def root2():
     return {"message3": "welcome"}
 
-main = AsgiMiddleware(app)
+def main(req):
+    return AsgiMiddleware(app)
 
